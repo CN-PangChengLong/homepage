@@ -70,6 +70,40 @@
         nav ul li a:hover {
             color: #e8491d;
         }
+
+        .skills {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .skills h3, .contact-info h3 {
+            margin-top: 0;
+        }
+
+        .skills ul, .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li, .contact-info ul li {
+            border: 1px solid #ddd;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        .contact-info {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info ul {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -100,9 +134,22 @@
             <p>这里可以详细介绍自己，包括职业、兴趣爱好等内容。</p>
         </section>
 
-        <section id="contact">
-            <h1>联系方式</h1>
-            <p>在这里放上您的联系方式，比如电子邮箱、社交媒体链接等。</p>
+        <section class="skills">
+            <h3>技能标签</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- 在此处添加更多技能 -->
+            </ul>
+        </section>
+
+        <section class="contact-info">
+            <h3>联系方式</h3>
+            <ul>
+                <li>E-mail: example@email.com</li>
+                <li>Phone: 123-456-7890</li>
+            </ul>
         </section>
     </div>
 </body>
