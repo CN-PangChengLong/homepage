@@ -29,74 +29,59 @@
             border-bottom: #e8491d 3px solid;
         }
 
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header ul li {
+        .profile-header {
+            display: flex;
+            align-items: center;
             float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header #branding h1 {
-            margin: 0;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        .profile-container {
-            position: fixed;
-            top: 10px;
-            right: 80px;
-            text-align: right;
         }
 
         .profile-photo {
             max-width: 50px;
             border-radius: 50%;
+            margin-right: 10px;
         }
 
         .profile-name {
-            display: block;
+            font-size: 20px;
+            color: white;
         }
 
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #e8491d;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>我的个人主页</h1>
+            <div class="profile-header">
+                <img class="profile-photo" src="path_to_your_photo.jpg" alt="Profile Photo">
+                <span class="profile-name">您的名字</span>
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="#home">主页</a></li>
+                    <li><a href="#home">主页</a></li>
                     <li><a href="#about">关于我</a></li>
                     <li><a href="#contact">联系方式</a></li>
                 </ul>
@@ -104,25 +89,20 @@
         </div>
     </header>
 
-    <div class="profile-container">
-        <img class="profile-photo" src="head.jpg" alt="Profile Photo">
-        <span class="profile-name">您的名字</span>
-    </div>
-
     <div class="container">
         <section id="home">
-            <h1>欢迎</h1>
-            <p>这是我的个人主页，我是一名软件开发者，热爱编程和技术。</p>
+            <h1>欢迎来到我的主页</h1>
+            <p>这里是一段介绍文字，可以简短介绍一下自己。</p>
         </section>
 
         <section id="about">
             <h1>关于我</h1>
-            <p>这里写一些关于你自己的介绍，比如你的专业背景、兴趣爱好等。</p>
+            <p>这里可以详细介绍自己，包括职业、兴趣爱好等内容。</p>
         </section>
 
         <section id="contact">
             <h1>联系方式</h1>
-            <p>可以在这里添加你的联系方式，比如电子邮件、LinkedIn等。</p>
+            <p>在这里放上您的联系方式，比如电子邮箱、社交媒体链接等。</p>
         </section>
     </div>
 </body>
