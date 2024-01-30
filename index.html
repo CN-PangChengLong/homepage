@@ -70,43 +70,22 @@
             font-weight: bold;
         }
 
+        .profile-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            text-align: right;
+        }
+
         .profile-photo {
-            max-width: 150px;
-            margin: 20px 0;
+            max-width: 50px;
+            border-radius: 50%;
         }
 
-        .skills {
-            background: #f4f4f4;
-            padding: 10px;
-            margin-top: 20px;
+        .profile-name {
+            display: block;
         }
 
-        .skills h3 {
-            margin-top: 0;
-        }
-
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills ul li {
-            border: 1px solid #ddd;
-            display: inline-block;
-            margin: 5px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background: #fff;
-        }
-
-        .blog-link {
-            text-decoration: none;
-            color: #50b3a2;
-        }
-
-        .blog-link:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -125,6 +104,11 @@
         </div>
     </header>
 
+    <div class="profile-container">
+        <img class="profile-photo" src="path_to_your_photo.jpg" alt="Profile Photo">
+        <span class="profile-name">您的名字</span>
+    </div>
+
     <div class="container">
         <section id="home">
             <h1>欢迎</h1>
@@ -139,23 +123,6 @@
         <section id="contact">
             <h1>联系方式</h1>
             <p>可以在这里添加你的联系方式，比如电子邮件、LinkedIn等。</p>
-        </section>
-
-        <section id="profile">
-            <img class="profile-photo" src="path_to_your_photo.jpg" alt="Profile Photo">
-            <h1>你的名字</h1>
-            <p>一些关于你的介绍...</p>
-        </section>
-
-        <section class="skills">
-            <h3>技能标签</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <!-- 添加或移除技能 -->
-            </ul>
         </section>
     </div>
 </body>
